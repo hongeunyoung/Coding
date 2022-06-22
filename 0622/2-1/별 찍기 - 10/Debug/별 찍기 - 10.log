@@ -1,0 +1,4 @@
+﻿  별 찍기 - 10.c
+C:\Users\USER\Desktop\CT\0622\2-1\별 찍기 - 10\별 찍기 - 10.c(7,9): warning C4033: 'star'은(는) 값을 반환해야 합니다.
+C:\Users\USER\Desktop\CT\0622\2-1\별 찍기 - 10\별 찍기 - 10.c(36): warning C4716: 'star': 값을 반환해야 합니다.
+  별 찍기 - 10.vcxproj -> C:\Users\USER\Desktop\CT\0622\2-1\Debug\별 찍기 - 10.exe

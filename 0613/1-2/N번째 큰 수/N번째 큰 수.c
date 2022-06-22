@@ -18,14 +18,14 @@ int sort() {
 
     return n[7];
 }
+
 int main() {
 	int T;
 
 	scanf_s("%d", &T);
 
-	for (int i = 0; i < T; i++) {
+	for (int i = 0; i < T; i++)
         printf("%d\n", sort());
-	}
 
     return 0;
 }
