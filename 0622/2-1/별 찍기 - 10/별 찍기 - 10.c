@@ -1,31 +1,25 @@
 #include <stdio.h>
-#include <stdlib.h>
 
-int star(int n, int k, int* result, int blank) {
-    
+void star(int i, int j, int n) {
+    if ((i / n) % 3 == 1 && (j / n) % 3 == 1)
+        printf(" ");
+    else {
+        if (n == 1)
+            printf("*");
+        else
+            star(i, j, n / 3);
+    }
 }
 
 int main() {
-    int N, k = 0;
-    int* result;
-
+    int N;
     scanf_s("%d", &N);
-    result = (int*)malloc((N * N) * sizeof(int));
-    star(N, 0, result, 0);
 
     for (int i = 0; i < N; i++) {
-        for (int j = 0; j < N; j++) {
-            /*
-            if (result[k] == 1)
-                printf(" ");
-            else
-                printf("*");
-
-            k++;
-            */
-            printf("%d", result[k++]);
-        }
+        for (int j = 0; j < N; j++)
+            star(i, j, N / 3);
         printf("\n");
     }
+
     return 0;
 }
